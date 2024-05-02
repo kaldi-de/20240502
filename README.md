@@ -18,9 +18,9 @@ Choose the setup and the language you want to install. Please choose only one...
 
 english version!
 ```
-python /data/MaxxFan/setup-en.py
+python /data/RelayBox/setup-en.py
 ```
 german version!
 ```
-python /data/MaxxFan/setup-de.py
+python /data/RelayBox/setup-de.py
 ```
