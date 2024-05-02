@@ -4,11 +4,11 @@
 addAllDbusSettings () {
     local settings=""
 
-    if [ -f "/data/RoadbuckMods/StarterBattery/files/DbusUpdate" ]; then
+    if [ -f "/data/RoadbuckMods/RelayBox/files/DbusUpdate" ]; then
         echo "Updating D-Bus Settings"
         while IFS= read -r line || [[ -n "$line" ]]; do
             settings+="$line, "
-        done < "/data/RoadbuckMods/StarterBattery/files/DbusUpdate"
+        done < "/data/RoadbuckMods/RelayBox/files/DbusUpdate"
 
         dbus -y com.victronenergy.settings / AddSettings "%[ $settings  ]" &> /dev/null
 
